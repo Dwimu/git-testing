@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // generate random number with loop
+      //   function generatRandomNumber(digit) {
+      //     return parseInt(Math.random() * 10 ** digit);
+      //   }
+      //   let numbers = [];
+      //   for (let i = 0; i < 100; i++) {
+      //     let random = generatRandomNumber(2);
+      //     numbers.push(random);
+      //   }
+
+      //   console.time("for"); ///////////// To check the taking time to executed
+      //   for (let index = 0; index < numbers.length; index++) {
+      //     const element = numbers[index];
+      //   }
+      //   console.timeEnd("for");
+
+      //   console.time("for-of");
+      //   for (let num of numbers) {
+      //   }
+      //   console.timeEnd("for-of");
+
+      // array with for loop
+
+      //   let number = [12, 34, 2, 1, 45, 67, 100];
+      // for (let i = 0; i < number.length; i++) {
+      //   console.log(number[i]);
+      // }
+
+      // array with for of
+      //   for (let el of number) {
+      //////////// shortcut key fof
+      //     console.log(el);
+      //   }
+
+      // call back function
+      //   const sum = (a, b) => {
+      //     return a + b;
+      //   };
+      //   function printSum(cb) {
+      //     console.log(cb);
+      //   }
+
+      //   const multiply = (a, b) => {
+      //     return a * b;
+      //   };
+      //   function printMultiply(test) {
+      //     test(3,5)
+      //   }
+
+      //   anonymous array function///////////afn shortkut key
+
+      // for each loop
+      // let number = [1, 3, 6, 2, 78, 9, 0, 5, 45, 34, 12, 10, 191991, 2367];
+
+      //   const print = (i) => {
+      //     console.log(i);
+      //   };
+
+      //   number.forEach(print);
+
+      //   number.forEach(el) => {
+      //       console.log(el);
+      //   };
+
+      // sorting
+      //   const compare = (a, b) => {
+      //     console.log(a, b);
+      //   };
+      // const compare = (a, b) => {
+      // console.log(`a = ${a}   b = ${b}`);
+
+      // if (a > b) return 1; /////// to sort proper in low to high ascending order
+      // if (b > a) return -1;
+      // return 0;
+
+      //     if (a > b) return -1; /////// to sort proper in high to low  dscending order
+      //     if (b > a) return 1;
+      //     return 0;
+      //   };
+
+      //   ///////////////////////////////for ascending order use a - b;
+      //   //////////////////////////////for descending order use b - a;
+
+      //   number.sort(compare);
+
+      // in a single line we can sort the number in ascending order or descending order
+
+      // number.sort((a, b) => a - b); /////// for ascending order
+      // number.sort((a, b) => b - a); /////// for descending order
+
+      let number = [23, 34, 5, 7, 9, 0, 12, 10, 13, 15, 18];
+      // for (let i = 0; i < number.length; i++) {
+      //   console.log(number[i]);
+      // }
+
+      // for of
+      // for (let num of number) {
+      //   console.log(num);
+      // }
+
+      // array with for in
+      for (let num in number) {
+        console.log(num);
+      }
+    </script>
+  </body>
+</html>

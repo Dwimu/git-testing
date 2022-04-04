@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        height: 80vh;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center; /*----------------center ao dintinnw takai center use kalamyw
+        /* justify-content: end; -------------------right nifrai display kalamnw takai end kwo use kalayw */
+        /* justify-content: space-between; ---------block ni gejerao space hwnw takai space between kwo bahaiyw */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* gap: 20px; ------------gap hwnw takai gap kwo usekalayw */
+
+        /* scroll kalamnw takai use kamalyw */
+        /* overflow: scroll; */
+
+        /* gahayao wrap kalamnw takai flex-wrap wrap use kalmaye */
+        flex-wrap: wrap;
+        /* ulta lirnaikwo reverse kalamnw takai flex-direction: row reverse use kalamyw */
+        flex-direction: row-reverse;
+      }
+      .parent .child {
+        /* judi height kwo use kalmyabah  */
+        height: 200px;
+        width: 200px;
+        /* judi width hwnai gwiyabah flex-grow use kalamyw */
+        /* flex-grow: 1; */
+        flex-shrink: 0;
+        border: 1px solid black;
+      }
+
+      .three {
+        /* mwnselo target kamnwbla align-self:center / right/ endS */
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <h1>DWIMU</h1>
+      </div>
+      <div class="child">
+        <h1>Muchahary</h1>
+      </div>
+      <div class="child">
+        <h1>Dwimu</h1>
+      </div>
+      <div class="child three">
+        <h1>Muchahary</h1>
+      </div>
+      <div class="child">
+        <h1>Dwimu</h1>
+      </div>
+      <div class="child">
+        <h1>Muchahary</h1>
+      </div>
+      <div class="child">
+        <h1>Hello</h1>
+      </div>
+      <div class="child">
+        <h1>Hello</h1>
+      </div>
+      <div class="child">
+        <h1>Hello</h1>
+      </div>
+      <div class="child">
+        <h1>Hello</h1>
+      </div>
+      <div class="child">
+        <h1>Hello</h1>
+      </div>
+    </div>
+  </body>
+</html>

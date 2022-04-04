@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        name: "Dwimu",
+        age: 21,
+        isVerified: false,
+        addresses: ["#29", "#29", "#2093"],
+        friend: { id: 24293, name: "ijk" },
+      };
+
+      let product = {
+        id: 123456789,
+        brand: "BMW",
+        price: 23456.9,
+        color: "white",
+        includes: ["charger", "earphones"],
+        dimensions: { height: 2456 },
+      };
+      let product1 = {
+        id: 123456789345,
+        brand: "BMW",
+        price: 23456.9,
+        color: "white",
+        includes: ["charger", "earphones"],
+        dimensions: { height: 2456 },
+      };
+      let product2 = {
+        id: 12345678912,
+        brand: "BMW",
+        price: 23456.9,
+        color: "white",
+        includes: ["charger", "earphones"],
+        dimensions: { height: 2456 },
+      };
+      let product3 = {
+        id: 12345678956678,
+        brand: "BMW",
+        price: 23456.9,
+        color: "white",
+        includes: ["charger", "earphones"],
+        dimensions: { height: 2456 },
+      };
+      let product4 = {
+        id: 12345678945678,
+        brand: "BMW",
+        price: 23456.9,
+        color: "white",
+        includes: ["charger", "earphones"],
+        dimensions: { height: 2456 },
+      };
+      let product5 = {
+        id: 12345678978,
+        brand: "sdf",
+        price: 23456.9,
+        color: "white",
+        includes: ["charger", "earphones"],
+        dimensions: { height: 2456 },
+      };
+
+      let products = [
+        product,
+        product1,
+        product2,
+        product3,
+        product4,
+        product5,
+      ];
+
+      //--------------------Object to string---------------converting----------------
+      let json = JSON.stringify(products);
+
+      //---------------------string to array ---------------converting----------
+      let jsonString = `'[{"id":123456789,"brand":"BMW","price":23456.9,"color":"white","includes":["charger","earphones"],"dimensions":{"height":2456}},{"id":123456789345,"brand":"BMW","price":23456.9,"color":"white","includes":["charger","earphones"],"dimensions":{"height":2456}},{"id":12345678912,"brand":"BMW","price":23456.9,"color":"white","includes":["charger","earphones"],"dimensions":{"height":2456}},{"id":12345678956678,"brand":"BMW","price":23456.9,"color":"white","includes":["charger","earphones"],"dimensions":{"height":2456}},{"id":12345678945678,"brand":"BMW","price":23456.9,"color":"white","includes":["charger","earphones"],"dimensions":{"height":2456}},{"id":12345678978,"brand":"sdf","price":23456.9,"color":"white","includes":["charger","earphones"],"dimensions":{"height":2456}}]'`;
+
+      let array = JSON.parse(jsonString);
+
+      //   for in loop
+
+      for (let key in person) {
+        console.log(key, person[key]);
+      }
+    </script>
+  </body>
+</html>

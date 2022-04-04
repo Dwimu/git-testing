@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = `[
+       {
+        "name": "Bridget O'Conner",
+        "email": "Forrest_Blick7@hotmail.com",
+        "parent_salary": "406.80",
+        "parent_name": "Sadie Schimmel",
+        "id": "1"
+       },
+       {
+        "name": "Dr. Glen Cruickshank",
+        "email": "Vince58@gmail.com",
+        "parent_salary": "695.81",
+        "parent_name": "Darrin Prosacco",
+        "id": "2"
+       },
+       {
+        "name": "Lynne Lang",
+        "email": "Savion.Koss@hotmail.com",
+        "parent_salary": "438.37",
+        "parent_name": "Elvira Ratke",
+        "id": "3"
+       },
+       {
+        "name": "Kelly Hammes",
+        "email": "Freeman.Prohaska@hotmail.com",
+        "parent_salary": "993.83",
+        "parent_name": "Levi Effertz",
+        "id": "4"
+       },
+       {
+        "name": "Marcella Bauch",
+        "email": "Angie_Sporer@yahoo.com",
+        "parent_salary": "739.52",
+        "parent_name": "Kate Dickinson",
+        "id": "5"
+       },
+       {
+        "name": "Ms. Pam Towne",
+        "email": "Salvatore.Streich@gmail.com",
+        "parent_salary": "569.28",
+        "parent_name": "Mr. Regina Graham",
+        "id": "6"
+       },
+       {
+        "name": "Lonnie Kling",
+        "email": "Trystan.Altenwerth@yahoo.com",
+        "parent_salary": "756.65",
+        "parent_name": "Priscilla Schroeder",
+        "id": "7"
+       },
+       {
+        "name": "Mr. Myron D'Amore",
+        "email": "Meggie_McKenzie42@hotmail.com",
+        "parent_salary": "298.47",
+        "parent_name": "Elvira Wiegand Sr.",
+        "id": "8"
+       },
+       {
+        "name": "Fred Casper",
+        "email": "Jon.Torp30@hotmail.com",
+        "parent_salary": "284.88",
+        "parent_name": "Jeremy Weimann",
+        "id": "9"
+       },
+       {
+        "name": "Spencer Tillman",
+        "email": "Blair.Stamm@gmail.com",
+        "parent_salary": "266.98",
+        "parent_name": "Christie Von",
+        "id": "10"
+       },
+       {
+        "name": "Denise Johns",
+        "email": "Nicola.Schmidt@yahoo.com",
+        "parent_salary": "591.74",
+        "parent_name": "Alma Watsica MD",
+        "id": "11"
+       },
+       {
+        "name": "Brooke McCullough",
+        "email": "Alva.Homenick@gmail.com",
+        "parent_salary": "645.75",
+        "parent_name": "Hazel Bernhard",
+        "id": "12"
+       },
+       {
+        "name": "Mrs. Warren Rempel",
+        "email": "Jonathan_Rippin@hotmail.com",
+        "parent_salary": "556.77",
+        "parent_name": "Sheri Marquardt",
+        "id": "13"
+       },
+       {
+        "name": "Dean Walter DDS",
+        "email": "Harmony3@hotmail.com",
+        "parent_salary": "878.06",
+        "parent_name": "Bobby Jacobi",
+        "id": "14"
+       },
+       {
+        "name": "Ramon Ziemann",
+        "email": "Marty13@hotmail.com",
+        "parent_salary": "529.53",
+        "parent_name": "Mr. Oscar Moen",
+        "id": "15"
+       },
+       {
+        "name": "Garrett Durgan",
+        "email": "Tate64@gmail.com",
+        "parent_salary": "726.44",
+        "parent_name": "Mr. Sally Emard",
+        "id": "16"
+       },
+       {
+        "name": "Mrs. Vicki Gleichner",
+        "email": "Shaniya_Rolfson78@gmail.com",
+        "parent_salary": "652.91",
+        "parent_name": "Annie Carroll",
+        "id": "17"
+       },
+       {
+        "name": "Dr. Debbie Bayer",
+        "email": "Amalia_Thiel20@yahoo.com",
+        "parent_salary": "284.84",
+        "parent_name": "Blanche Hessel",
+        "id": "18"
+       },
+       {
+        "name": "Debra Kemmer",
+        "email": "Elenor.Botsford@gmail.com",
+        "parent_salary": "903.88",
+        "parent_name": "Leon Gerlach Sr.",
+        "id": "19"
+       },
+       {
+        "name": "Shelia Conroy",
+        "email": "Felipe.Bogisich57@hotmail.com",
+        "parent_salary": "275.57",
+        "parent_name": "June Little",
+        "id": "20"
+       },
+       {
+        "name": "Jason Bosco",
+        "email": "Miles.Murphy@hotmail.com",
+        "parent_salary": "665.29",
+        "parent_name": "Tracey Swift",
+        "id": "21"
+       },
+       {
+        "name": "Enrique Mueller",
+        "email": "Kay_Adams@hotmail.com",
+        "parent_salary": "763.63",
+        "parent_name": "Marilyn Sipes",
+        "id": "22"
+       },
+       {
+        "name": "Jerry Pollich",
+        "email": "Evelyn88@yahoo.com",
+        "parent_salary": "375.86",
+        "parent_name": "Dr. Marsha Krajcik",
+        "id": "23"
+       },
+       {
+        "name": "Yvonne Flatley",
+        "email": "Brandi_Kulas37@yahoo.com",
+        "parent_salary": "865.57",
+        "parent_name": "Manuel Graham",
+        "id": "24"
+       },
+       {
+        "name": "Brandi Anderson",
+        "email": "Delia0@gmail.com",
+        "parent_salary": "978.79",
+        "parent_name": "Karl Ferry",
+        "id": "25"
+       },
+       {
+        "name": "Dr. Frederick Bernhard",
+        "email": "Ferne_Hoppe@gmail.com",
+        "parent_salary": "384.59",
+        "parent_name": "Marty Bashirian",
+        "id": "26"
+       },
+       {
+        "name": "Agnes Klocko",
+        "email": "Caesar_Schmitt20@hotmail.com",
+        "parent_salary": "638.17",
+        "parent_name": "Luz Rosenbaum",
+        "id": "27"
+       },
+       {
+        "name": "Mrs. Lela Jones",
+        "email": "Gardner_Rippin40@hotmail.com",
+        "parent_salary": "963.61",
+        "parent_name": "Mae Borer",
+        "id": "28"
+       },
+       {
+        "name": "Bonnie Hilll",
+        "email": "Lucious.Sipes89@gmail.com",
+        "parent_salary": "310.59",
+        "parent_name": "Lyle Mayer",
+        "id": "29"
+       },
+       {
+        "name": "Miss Nora Pagac",
+        "email": "Amya.Fay@gmail.com",
+        "parent_salary": "865.62",
+        "parent_name": "Orlando Thompson",
+        "id": "30"
+       },
+       {
+        "name": "Dexter Carroll DVM",
+        "email": "Hugh5@hotmail.com",
+        "parent_salary": "613.14",
+        "parent_name": "David Dooley",
+        "id": "31"
+       },
+       {
+        "name": "Lucille Runolfsdottir",
+        "email": "Ona_Green@yahoo.com",
+        "parent_salary": "390.01",
+        "parent_name": "Alyssa Howe Sr.",
+        "id": "32"
+       },
+       {
+        "name": "Laverne MacGyver MD",
+        "email": "Laurianne_Marvin@hotmail.com",
+        "parent_salary": "226.20",
+        "parent_name": "Chelsea Fay III",
+        "id": "33"
+       },
+       {
+        "name": "Ernestine Walsh",
+        "email": "Myrl_Willms63@hotmail.com",
+        "parent_salary": "482.23",
+        "parent_name": "Matthew Koss",
+        "id": "34"
+       },
+       {
+        "name": "Larry Glover",
+        "email": "Cynthia_Reynolds@yahoo.com",
+        "parent_salary": "148.59",
+        "parent_name": "Irma Heaney",
+        "id": "35"
+       },
+       {
+        "name": "Brent Rempel",
+        "email": "Unique.Wolf@hotmail.com",
+        "parent_salary": "891.03",
+        "parent_name": "Marvin Jacobson",
+        "id": "36"
+       },
+       {
+        "name": "Kelley Jacobs",
+        "email": "Arden_Hahn13@hotmail.com",
+        "parent_salary": "435.38",
+        "parent_name": "Susie Senger",
+        "id": "37"
+       },
+       {
+        "name": "Austin Schuster",
+        "email": "Jevon72@yahoo.com",
+        "parent_salary": "476.27",
+        "parent_name": "Conrad Goyette",
+        "id": "38"
+       },
+       {
+        "name": "Cesar Kirlin",
+        "email": "Justina.Feest@gmail.com",
+        "parent_salary": "730.67",
+        "parent_name": "Eunice Cassin",
+        "id": "39"
+       },
+       {
+        "name": "Tabitha Dare",
+        "email": "Kade48@hotmail.com",
+        "parent_salary": "170.44",
+        "parent_name": "Judith Cartwright",
+        "id": "40"
+       },
+       {
+        "name": "Angelica Reilly",
+        "email": "Herminia_Konopelski18@hotmail.com",
+        "parent_salary": "908.13",
+        "parent_name": "Ricardo Crist",
+        "id": "41"
+       },
+       {
+        "name": "Rolando Jast",
+        "email": "Ryann45@gmail.com",
+        "parent_salary": "86.92",
+        "parent_name": "Ms. Keith Walker",
+        "id": "42"
+       },
+       {
+        "name": "Mathew Wilderman",
+        "email": "Evans.Mertz@hotmail.com",
+        "parent_salary": "562.04",
+        "parent_name": "Dr. Nick Boyer",
+        "id": "43"
+       },
+       {
+        "name": "Grace Schroeder",
+        "email": "Kenton.Heller@yahoo.com",
+        "parent_salary": "272.23",
+        "parent_name": "William Kessler",
+        "id": "44"
+       },
+       {
+        "name": "Kristie Aufderhar",
+        "email": "Salvador.Marks@hotmail.com",
+        "parent_salary": "658.54",
+        "parent_name": "Chad Trantow",
+        "id": "45"
+       },
+       {
+        "name": "Josh Jerde",
+        "email": "Bartholome_Heidenreich@hotmail.com",
+        "parent_salary": "980.60",
+        "parent_name": "Kendra Buckridge",
+        "id": "46"
+       },
+       {
+        "name": "Juan Thompson",
+        "email": "Olga_Kunde@gmail.com",
+        "parent_salary": "997.35",
+        "parent_name": "Lisa Nader Sr.",
+        "id": "47"
+       },
+       {
+        "name": "Rachael Beahan",
+        "email": "Alessandra.Cole@hotmail.com",
+        "parent_salary": "737.94",
+        "parent_name": "Ernest Mitchell",
+        "id": "48"
+       },
+       {
+        "name": "Pauline Johnson",
+        "email": "Christiana_Von@hotmail.com",
+        "parent_salary": "43.84",
+        "parent_name": "Grant Bahringer",
+        "id": "49"
+       },
+       {
+        "name": "Mrs. Essie Dietrich",
+        "email": "Vida.Kling31@yahoo.com",
+        "parent_salary": "454.48",
+        "parent_name": "Jean Grant",
+        "id": "50"
+       },
+       {
+        "name": "Darrel Kulas",
+        "email": "Niko.Schroeder@hotmail.com",
+        "parent_salary": "292.86",
+        "parent_name": "Ira Tillman",
+        "id": "51"
+       }
+      ]`;
+
+      let students = JSON.parse(data);
+
+      function changeDomainOfEmail(email, domain) {
+        emaol = email.split("@");
+        email[1] = domain;
+        email = eamil.jpon("@");
+        return email;
+      }
+
+      let result = students.map((data) => {
+        return { ...data, email: changeDomainOfEmail(data.email, "yahoo.com") };
+      });
+
+      let parents_salary_total = students.reduce(
+        (total, student) => total + Number(data.parents_salary),
+        0
+      );
+    </script>
+  </body>
+</html>
